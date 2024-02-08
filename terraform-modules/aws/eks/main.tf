@@ -32,7 +32,7 @@ resource "aws_kms_key" "eks" {
 }
 
 module "kms_cloudwatch_log_group" {
-  source                  = "github.com/ManagedKube/kubernetes-ops.git//terraform-modules/aws/kms/cloudwatch_log_group?ref=v2.0.37"
+  source                  = "github.com/Bckarnati2018/kubernetes-ops.git//terraform-modules/aws/kms/cloudwatch_log_group"
   log_group_name          = "/aws/eks/${var.cluster_name}/cluster"
   tags                    = var.tags
 }
