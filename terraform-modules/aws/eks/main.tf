@@ -117,11 +117,11 @@ module "eks" {
   node_security_group_additional_rules = var.node_security_group_additional_rules
 
   # aws-auth configmap
-  manage_aws_auth_configmap = true
+  # manage_aws_auth_configmap = true
 
-  aws_auth_roles = var.aws_auth_roles
+  # aws_auth_roles = var.aws_auth_roles
 
-  aws_auth_users = var.aws_auth_users
+  # aws_auth_users = var.aws_auth_users
 
-  aws_auth_accounts = var.aws_auth_accounts
+  # aws_auth_accounts = var.aws_auth_accounts
 }
